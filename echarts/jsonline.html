@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="myChart" style="width: 800px;height: 800px;"></div>
+    <script>
+        var myChart=echarts.init(document.getElementById('myChart'));
+        var option={
+            tooltip: {},
+            xAxis: {
+                type: 'category',
+                data: [],
+                boundaryGap: false,
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [],
+                type: 'line',
+                areaStyle: {},
+                smooth: true
+            }]
+        };
+
+        myChart.setOption(option);
+
+        $.ajax({
+            type: "post",
+            async: false, //同步执行
+            url: "php/mapdata.php",
+            dataType: "json", //返回数据形式为json
+            success: function(result) {
+                console.log(typeof(result.name))
+                myChart.setOption({ //渲染数据
+                    xAxis: [{
+                        data: result.name
+                    }],
+                    series: [{
+                        data: result.value
+                    }]
+                });
+            },
+            error: function() {
+                alert("请求数据失败!");
+            }
+        })
+
+    </script>
+</body>
+</html>

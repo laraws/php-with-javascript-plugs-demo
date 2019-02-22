@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="myChart" style="width: 800px;height: 800px;"></div>
+<div>
+    <!--<input type="radio" name="rd" id="rd1" value="贵州茅台">贵州茅台-->
+    <!--<input type="radio" name="rd" id="rd2" value="招商银行">招商银行-->
+    <!--<input type="button" id="btn" value="单选">-->
+
+    <select name="products" id="sel">
+        <option value='中国平安'>中国平安</option>
+        <option value='招商银行' selected>招商银行</option>
+        <option value='贵州茅台'>贵州茅台</option>
+    </select>
+    <input type="button" id="btn" value="单选">
+
+    <input type="checkbox" name="ck" value="中国平安">中国平安
+    <input type="checkbox" name="ck" value="招商银行" checked>招商银行
+    <input type="checkbox" name="ck" value="贵州茅台">贵州茅台
+    <input type="button" id="btn1" value="多选">
+
+    开始<input type="date" id="dateform" value="2018-01-01"/>
+    结束<input type="date" id="dateto" value="2018-01-06"/>
+    <input type="button" id="btn2" value="选择日期">
+
+</div>
+
+<script>
+    var myChart=echarts.init(document.getElementById('myChart'));
+
+    // option = {
+    //     title: {
+    //         text: '折线图堆叠'
+    //     },
+    //     tooltip: {
+    //         trigger: 'axis',
+    //         axisPointer: {
+    //             type: 'cross'
+    //         }
+    //     },
+    //     legend: {
+    //     },
+    //     grid: {
+    //         left: '3%',
+    //         right: '4%',
+    //         bottom: '3%',
+    //         containLabel: true
+    //     },
+    //     toolbox: {
+    //         feature: {
+    //             saveAsImage: {}
+    //         }
+    //     },
+    //     xAxis: {
+    //         type: 'category',
+    //         boundaryGap: false,
+    //         data: []
+    //     },
+    //     yAxis: {
+    //         type: 'value'
+    //     },
+    //     series: [
+    //         {
+    //             name:'',
+    //             type:'line',
+    //             stack: '总量',
+    //             data:[]
+    //         },
+    //     ]
+    // };
+
+    // $.ajax({
+    //     type: "post",
+    //     url: "php/stockdata.php",
+    //     dataType: "json",
+    //     success: function(data) {
+    //         myChart.setOption({
+    //             legend: {
+    //                 data:data.name
+    //             },
+    //             xAxis: {
+    //                 data: data.time
+    //             },
+    //             yAxis: {},
+    //             series: [
+    //                 {
+    //                     name: data.name[0],
+    //                     data: data.price0
+    //                 }]
+    //         });
+    //     }
+    // });
+
+    //单选
+    $('#btn').click(function () {
+        $.ajax({
+            type: "post",
+            url: "php/postdata.php",
+            dataType: "json",
+            data: {
+                name:$('select#sel').find('option:selected').val()
+            },
+            success: function(data) {
+                myChart.setOption({
+                    legend: {
+                        data:data.name
+                    },
+                    xAxis: {
+                        data: data.time
+                    },
+                    yAxis: {},
+                    series: [
+                        {
+                            name: data.name[0],
+                            data: data.price0
+                        }]
+                });
+            }
+        })
+    });
+
+    // 多选
+    // $('#btn1').click(function () {
+    //     var arr=new Array();
+    //     $("input[name='ck']:checked").each(function () {
+    //         arr.push($(this).val());
+    //     });
+    //     $.ajax({
+    //         type: "post",
+    //         url: "php/postdata.php",
+    //         dataType: "json",
+    //         data: {
+    //             name:arr,
+    //
+    //         },
+    //         success: function(data) {
+    //             myChart.setOption({
+    //                 legend: {
+    //                     data:data.name
+    //                 },
+    //                 xAxis: {
+    //                     data: data.time
+    //                 },
+    //                 yAxis: {},
+    //                 series: [
+    //                     {
+    //                         name: data.name[0],
+    //                         data: data.price0
+    //                     }]
+    //             });
+    //         }
+    //     })
+    // });
+
+    // $('#btn2').click(function () {
+    //     $.ajax({
+    //         type: "post",
+    //         url: "php/postdata.php",
+    //         dataType: "json",
+    //         data: {
+    //             dateform:$('#dateform').val(),
+    //             dateto:$('#dateto').val()
+    //
+    //         },
+    //         success: function(data) {
+    //             myChart.setOption({
+    //                 legend: {
+    //                     data:data.name
+    //                 },
+    //                 xAxis: {
+    //                     data: data.time
+    //                 },
+    //                 yAxis: {},
+    //                 series: [
+    //                     {
+    //                         name: data.name[0],
+    //                         data: data.price0
+    //                     }]
+    //             });
+    //         }
+    //     })
+    // });
+
+
+    // var arr=new Array();
+    // $("input[name='ck']:checked").each(function () {
+    //     arr.push($(this).val());
+    // });
+
+
+    //多选使用json文件测试
+// $('#btn1').click(function () {
+//     $.get('json/1.json').done(function (data) {
+//         var seriesData = new Array();
+//         var legendData = new Array();
+//         $.each(data.name,function (i,v) {
+//             seriesData.push({
+//                 name:v,
+//                 type:'line',
+//                 stack: '总量',
+//                 data:data.price0
+//             });
+//             legendData.push(v);
+//         });
+//         var xData=data.time;
+//         var option = {
+//             title : {
+//                 text : '动态多折线图'
+//             },
+//             tooltip : {
+//                 trigger : 'axis',
+//                 axisPointer: {
+//                     type: 'cross'
+//                 }
+//             },
+//             legend : {
+//                 data: legendData
+//             },
+//             grid: {
+//                 left: '3%',
+//                 right: '4%',
+//                 bottom: '3%',
+//                 containLabel: true
+//             },
+//             toolbox: {
+//                 feature: {
+//                     saveAsImage: {}
+//                 }
+//             },
+//             xAxis: {
+//                 type: 'category',
+//                 boundaryGap: false,
+//                 data: xData
+//             },
+//             yAxis: {
+//                 type: 'value'
+//             },
+//             series: seriesData
+//         };
+//         myChart.setOption(option);
+//     });
+//
+// })
+
+    // myChart.setOption(option);
+
+    // $('#btn1').click(function () {
+    //     var arr=new Array();
+    //         $("input[name='ck']:checked").each(function () {
+    //             arr.push($(this).val());
+    //         });
+    //     $.ajax({
+    //         type : "post",
+    //         url: "php/postdata.php",
+    //         dataType: "json",
+    //                 data: {
+    //                     name: arr
+    //                 },
+    //         success: function (data) {
+    //             var seriesData = new Array();
+    //             var legendData = new Array();
+    //             $.each(data.name,function (i,v) {
+    //                 seriesData.push({
+    //                     name:v,
+    //                     type:'line',
+    //                     stack: '总量',
+    //                     data:data.price0
+    //                 });
+    //                 legendData.push(v);
+    //             });
+    //             var xData=data.time;
+    //             var option = {
+    //                 title : {
+    //                     text : '动态多折线图'
+    //                 },
+    //                 tooltip : {
+    //                     trigger : 'axis',
+    //                     axisPointer: {
+    //                         type: 'cross'
+    //                     }
+    //                 },
+    //                 legend : {
+    //                     data: legendData
+    //                 },
+    //                 grid: {
+    //                     left: '3%',
+    //                     right: '4%',
+    //                     bottom: '3%',
+    //                     containLabel: true
+    //                 },
+    //                 toolbox: {
+    //                     feature: {
+    //                         saveAsImage: {}
+    //                     }
+    //                 },
+    //                 xAxis: {
+    //                     type: 'category',
+    //                     boundaryGap: false,
+    //                     data: xData
+    //                 },
+    //                 yAxis: {
+    //                     type: 'value'
+    //                 },
+    //                 series: seriesData
+    //             };
+    //             myChart.setOption(option);
+    //         }
+    //     });
+    // })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1330 @@
+[
+  {
+    "id": 1,
+    "text": "产品分类",
+    "parent": "#",
+    "level": 1,
+    "full_name": "产品分类",
+    "top_id": 1
+  },
+  {
+    "id": 2,
+    "text": "智能金融业务",
+    "parent": 1,
+    "level": 2,
+    "full_name": "产品分类->智能金融业务",
+    "top_id": 1
+  },
+  {
+    "id": 3,
+    "text": "智能金融",
+    "parent": 2,
+    "level": 3,
+    "full_name": "产品分类->智能金融业务->智能金融",
+    "top_id": 1
+  },
+  {
+    "id": 4,
+    "text": "多因子",
+    "parent": 3,
+    "level": 4,
+    "full_name": "智能金融业务->智能金融->多因子",
+    "top_id": 1
+  },
+  {
+    "id": 5,
+    "text": "行情",
+    "parent": 3,
+    "level": 4,
+    "full_name": "智能金融业务->智能金融->行情",
+    "top_id": 1
+  },
+  {
+    "id": 6,
+    "text": "事件知识库",
+    "parent": 3,
+    "level": 4,
+    "full_name": "智能金融业务->智能金融->事件知识库",
+    "top_id": 1
+  },
+  {
+    "id": 7,
+    "text": "智能资讯",
+    "parent": 3,
+    "level": 4,
+    "full_name": "智能金融业务->智能金融->智能资讯",
+    "top_id": 1
+  },
+  {
+    "id": 8,
+    "text": "策略引擎",
+    "parent": 3,
+    "level": 4,
+    "full_name": "智能金融业务->智能金融->策略引擎",
+    "top_id": 1
+  },
+  {
+    "id": 9,
+    "text": "行情分析",
+    "parent": 2,
+    "level": 3,
+    "full_name": "产品分类->智能金融业务->行情分析",
+    "top_id": 1
+  },
+  {
+    "id": 10,
+    "text": "特色资讯",
+    "parent": 2,
+    "level": 3,
+    "full_name": "产品分类->智能金融业务->特色资讯",
+    "top_id": 1
+  },
+  {
+    "id": 11,
+    "text": "智能决策",
+    "parent": 2,
+    "level": 3,
+    "full_name": "产品分类->智能金融业务->智能决策",
+    "top_id": 1
+  },
+  {
+    "id": 12,
+    "text": "证券交易",
+    "parent": 2,
+    "level": 3,
+    "full_name": "产品分类->智能金融业务->证券交易",
+    "top_id": 1
+  },
+  {
+    "id": 15,
+    "text": "投顾服务",
+    "parent": 2,
+    "level": 3,
+    "full_name": "产品分类->智能金融业务->投顾服务",
+    "top_id": 1
+  },
+  {
+    "id": 16,
+    "text": "金融社区",
+    "parent": 2,
+    "level": 3,
+    "full_name": "产品分类->智能金融业务->金融社区",
+    "top_id": 1
+  },
+  {
+    "id": 17,
+    "text": "大盘仓位",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->大盘仓位",
+    "top_id": 1
+  },
+  {
+    "id": 18,
+    "text": "大盘异动",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->大盘异动",
+    "top_id": 1
+  },
+  {
+    "id": 19,
+    "text": "大盘云图",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->大盘云图",
+    "top_id": 1
+  },
+  {
+    "id": 20,
+    "text": "涨停追击",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->涨停追击",
+    "top_id": 1
+  },
+  {
+    "id": 21,
+    "text": "深度龙虎榜",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->深度龙虎榜",
+    "top_id": 1
+  },
+  {
+    "id": 22,
+    "text": "热度选股",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->热度选股",
+    "top_id": 1
+  },
+  {
+    "id": 23,
+    "text": "短线精灵",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->短线精灵",
+    "top_id": 1
+  },
+  {
+    "id": 24,
+    "text": "智能复盘",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->智能复盘",
+    "top_id": 1
+  },
+  {
+    "id": 25,
+    "text": "股价提醒",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->股价提醒",
+    "top_id": 1
+  },
+  {
+    "id": 26,
+    "text": "龙头识别",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->龙头识别",
+    "top_id": 1
+  },
+  {
+    "id": 28,
+    "text": "牛股归因",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->牛股归因",
+    "top_id": 1
+  },
+  {
+    "id": 29,
+    "text": "新股申购",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->新股申购",
+    "top_id": 1
+  },
+  {
+    "id": 30,
+    "text": "融资融券",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->融资融券",
+    "top_id": 1
+  },
+  {
+    "id": 31,
+    "text": "大宗交易",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->大宗交易",
+    "top_id": 1
+  },
+  {
+    "id": 32,
+    "text": "数据中心",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->数据中心",
+    "top_id": 1
+  },
+  {
+    "id": 33,
+    "text": "信息地雷",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->信息地雷",
+    "top_id": 1
+  },
+  {
+    "id": 34,
+    "text": "短线天机",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->短线天机",
+    "top_id": 1
+  },
+  {
+    "id": 35,
+    "text": "原创资讯",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->原创资讯",
+    "top_id": 1
+  },
+  {
+    "id": 36,
+    "text": "全网头条",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->全网头条",
+    "top_id": 1
+  },
+  {
+    "id": 37,
+    "text": "掘金日历",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->掘金日历",
+    "top_id": 1
+  },
+  {
+    "id": 39,
+    "text": "舆情分析",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->舆情分析",
+    "top_id": 1
+  },
+  {
+    "id": 40,
+    "text": "概念雷达",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->概念雷达",
+    "top_id": 1
+  },
+  {
+    "id": 41,
+    "text": "自选情报",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->自选情报",
+    "top_id": 1
+  },
+  {
+    "id": 42,
+    "text": "全网热词",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->全网热词",
+    "top_id": 1
+  },
+  {
+    "id": 43,
+    "text": "事件集",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->事件集",
+    "top_id": 1
+  },
+  {
+    "id": 45,
+    "text": "听财经",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->听财经",
+    "top_id": 1
+  },
+  {
+    "id": 46,
+    "text": "数据仓库",
+    "parent": "#",
+    "level": 1,
+    "full_name": "数据仓库",
+    "top_id": 46
+  },
+  {
+    "id": 48,
+    "text": "相关资讯",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->相关资讯",
+    "top_id": 1
+  },
+  {
+    "id": 49,
+    "text": "产品涨价",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->产品涨价",
+    "top_id": 1
+  },
+  {
+    "id": 53,
+    "text": "基础数据",
+    "parent": 46,
+    "level": 2,
+    "full_name": "数据仓库->基础数据",
+    "top_id": 46
+  },
+  {
+    "id": 54,
+    "text": "股票投资",
+    "parent": 53,
+    "level": 3,
+    "full_name": "数据仓库->基础数据->股票投资",
+    "top_id": 46
+  },
+  {
+    "id": 56,
+    "text": "基金智选",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->基金智选",
+    "top_id": 1
+  },
+  {
+    "id": 57,
+    "text": "测试产品",
+    "parent": 3,
+    "level": 4,
+    "full_name": "智能金融业务->智能金融->测试产品",
+    "top_id": 1
+  },
+  {
+    "id": 58,
+    "text": "拍照导入股票",
+    "parent": 16,
+    "level": 4,
+    "full_name": "智能金融业务->金融社区->拍照导入股票",
+    "top_id": 1
+  },
+  {
+    "id": 59,
+    "text": "智能推送",
+    "parent": 16,
+    "level": 4,
+    "full_name": "智能金融业务->金融社区->智能推送",
+    "top_id": 1
+  },
+  {
+    "id": 60,
+    "text": "积分商城",
+    "parent": 16,
+    "level": 4,
+    "full_name": "智能金融业务->金融社区->积分商城",
+    "top_id": 1
+  },
+  {
+    "id": 61,
+    "text": "股友圈",
+    "parent": 16,
+    "level": 4,
+    "full_name": "智能金融业务->金融社区->股友圈",
+    "top_id": 1
+  },
+  {
+    "id": 62,
+    "text": "董秘问答",
+    "parent": 16,
+    "level": 4,
+    "full_name": "智能金融业务->金融社区->董秘问答",
+    "top_id": 1
+  },
+  {
+    "id": 65,
+    "text": "直播",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->直播",
+    "top_id": 1
+  },
+  {
+    "id": 66,
+    "text": "在线问答",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->在线问答",
+    "top_id": 1
+  },
+  {
+    "id": 67,
+    "text": "观点文章",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->观点文章",
+    "top_id": 1
+  },
+  {
+    "id": 68,
+    "text": "咨询内参",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->咨询内参",
+    "top_id": 1
+  },
+  {
+    "id": 69,
+    "text": "视频教学",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->视频教学",
+    "top_id": 1
+  },
+  {
+    "id": 70,
+    "text": "投资组合",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->投资组合",
+    "top_id": 1
+  },
+  {
+    "id": 71,
+    "text": "用户打赏",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->用户打赏",
+    "top_id": 1
+  },
+  {
+    "id": 72,
+    "text": "用户送礼",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->用户送礼",
+    "top_id": 1
+  },
+  {
+    "id": 73,
+    "text": "点评个股",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->点评个股",
+    "top_id": 1
+  },
+  {
+    "id": 74,
+    "text": "用户交易画像",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->用户交易画像",
+    "top_id": 1
+  },
+  {
+    "id": 75,
+    "text": "模拟炒股",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->模拟炒股",
+    "top_id": 1
+  },
+  {
+    "id": 76,
+    "text": "买卖模拟仓",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->买卖模拟仓",
+    "top_id": 1
+  },
+  {
+    "id": 77,
+    "text": "炒股大赛",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->炒股大赛",
+    "top_id": 1
+  },
+  {
+    "id": 78,
+    "text": "K线欢乐斗",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->K线欢乐斗",
+    "top_id": 1
+  },
+  {
+    "id": 79,
+    "text": "基金智配",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->基金智配",
+    "top_id": 1
+  },
+  {
+    "id": 81,
+    "text": "基金档案",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->基金档案",
+    "top_id": 1
+  },
+  {
+    "id": 82,
+    "text": "基金策略库",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->基金策略库",
+    "top_id": 1
+  },
+  {
+    "id": 83,
+    "text": "基金评价系统",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->基金评价系统",
+    "top_id": 1
+  },
+  {
+    "id": 84,
+    "text": "策略超市",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->策略超市",
+    "top_id": 1
+  },
+  {
+    "id": 85,
+    "text": "极智选股",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->极智选股",
+    "top_id": 1
+  },
+  {
+    "id": 86,
+    "text": "趋势选股",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->趋势选股",
+    "top_id": 1
+  },
+  {
+    "id": 87,
+    "text": "板块选股",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->板块选股",
+    "top_id": 1
+  },
+  {
+    "id": 88,
+    "text": "策略选股",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->策略选股",
+    "top_id": 1
+  },
+  {
+    "id": 89,
+    "text": "事件掘金",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->事件掘金",
+    "top_id": 1
+  },
+  {
+    "id": 90,
+    "text": "Z量化",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->Z量化",
+    "top_id": 1
+  },
+  {
+    "id": 91,
+    "text": "投顾工作室",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->投顾工作室",
+    "top_id": 1
+  },
+  {
+    "id": 92,
+    "text": "买卖信号",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->买卖信号",
+    "top_id": 1
+  },
+  {
+    "id": 93,
+    "text": "Z点操盘",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->Z点操盘",
+    "top_id": 1
+  },
+  {
+    "id": 94,
+    "text": "超级猎庄版",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->超级猎庄版",
+    "top_id": 1
+  },
+  {
+    "id": 95,
+    "text": "趋势分析",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->趋势分析",
+    "top_id": 1
+  },
+  {
+    "id": 96,
+    "text": "拐点预判",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->拐点预判",
+    "top_id": 1
+  },
+  {
+    "id": 97,
+    "text": "筹码分布",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->筹码分布",
+    "top_id": 1
+  },
+  {
+    "id": 98,
+    "text": "相似K线",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->相似K线",
+    "top_id": 1
+  },
+  {
+    "id": 99,
+    "text": "大单统计",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->大单统计",
+    "top_id": 1
+  },
+  {
+    "id": 100,
+    "text": "板块买卖信号",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->板块买卖信号",
+    "top_id": 1
+  },
+  {
+    "id": 101,
+    "text": "个股诊断",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->个股诊断",
+    "top_id": 1
+  },
+  {
+    "id": 102,
+    "text": "摇一摇诊股",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->摇一摇诊股",
+    "top_id": 1
+  },
+  {
+    "id": 103,
+    "text": "实时信号",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->实时信号",
+    "top_id": 1
+  },
+  {
+    "id": 104,
+    "text": "大盘温度计",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->大盘温度计",
+    "top_id": 1
+  },
+  {
+    "id": 105,
+    "text": "A股头条",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->A股头条",
+    "top_id": 1
+  },
+  {
+    "id": 106,
+    "text": "脱水研报",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->脱水研报",
+    "top_id": 1
+  },
+  {
+    "id": 107,
+    "text": "机会挖掘",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->机会挖掘",
+    "top_id": 1
+  },
+  {
+    "id": 108,
+    "text": "新闻资讯",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->新闻资讯",
+    "top_id": 1
+  },
+  {
+    "id": 109,
+    "text": "公告库",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->公告库",
+    "top_id": 1
+  },
+  {
+    "id": 110,
+    "text": "法规库",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->法规库",
+    "top_id": 1
+  },
+  {
+    "id": 111,
+    "text": "特色F10",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->特色F10",
+    "top_id": 46
+  },
+  {
+    "id": 112,
+    "text": "资讯精编专题",
+    "parent": 10,
+    "level": 4,
+    "full_name": "智能金融业务->特色资讯->资讯精编专题",
+    "top_id": 1
+  },
+  {
+    "id": 117,
+    "text": "基金投资",
+    "parent": 53,
+    "level": 3,
+    "full_name": "数据仓库->基础数据->基金投资",
+    "top_id": 46
+  },
+  {
+    "id": 118,
+    "text": "指数信息",
+    "parent": 53,
+    "level": 3,
+    "full_name": "数据仓库->基础数据->指数信息",
+    "top_id": 46
+  },
+  {
+    "id": 119,
+    "text": "特色专题",
+    "parent": 121,
+    "level": 3,
+    "full_name": "数据仓库->特色数据->特色专题",
+    "top_id": 46
+  },
+  {
+    "id": 120,
+    "text": "股东研究",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->股东研究",
+    "top_id": 46
+  },
+  {
+    "id": 121,
+    "text": "特色数据",
+    "parent": 46,
+    "level": 2,
+    "full_name": "数据仓库->特色数据",
+    "top_id": 46
+  },
+  {
+    "id": 122,
+    "text": "行情数据",
+    "parent": 46,
+    "level": 2,
+    "full_name": "数据仓库->行情数据",
+    "top_id": 46
+  },
+  {
+    "id": 123,
+    "text": "证券行情",
+    "parent": 122,
+    "level": 3,
+    "full_name": "数据仓库->行情数据->证券行情",
+    "top_id": 46
+  },
+  {
+    "id": 124,
+    "text": "港股行情",
+    "parent": 123,
+    "level": 4,
+    "full_name": "行情数据->证券行情->港股行情",
+    "top_id": 46
+  },
+  {
+    "id": 125,
+    "text": "美股行情",
+    "parent": 123,
+    "level": 4,
+    "full_name": "行情数据->证券行情->美股行情",
+    "top_id": 46
+  },
+  {
+    "id": 126,
+    "text": "Level1",
+    "parent": 123,
+    "level": 4,
+    "full_name": "行情数据->证券行情->Level1",
+    "top_id": 46
+  },
+  {
+    "id": 127,
+    "text": "Level2",
+    "parent": 123,
+    "level": 4,
+    "full_name": "行情数据->证券行情->Level2",
+    "top_id": 46
+  },
+  {
+    "id": 128,
+    "text": "独家数据",
+    "parent": 121,
+    "level": 3,
+    "full_name": "数据仓库->特色数据->独家数据",
+    "top_id": 46
+  },
+  {
+    "id": 129,
+    "text": "操盘必读",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->操盘必读",
+    "top_id": 46
+  },
+  {
+    "id": 130,
+    "text": "基金估值",
+    "parent": 12,
+    "level": 4,
+    "full_name": "智能金融业务->证券交易->基金估值",
+    "top_id": 1
+  },
+  {
+    "id": 131,
+    "text": "智能交易点",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->智能交易点",
+    "top_id": 1
+  },
+  {
+    "id": 132,
+    "text": "公司概况",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->公司概况",
+    "top_id": 46
+  },
+  {
+    "id": 133,
+    "text": "公司大事",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->公司大事",
+    "top_id": 46
+  },
+  {
+    "id": 134,
+    "text": "财务分析",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->财务分析",
+    "top_id": 46
+  },
+  {
+    "id": 135,
+    "text": "新闻公告",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->新闻公告",
+    "top_id": 46
+  },
+  {
+    "id": 136,
+    "text": "经营分析",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->经营分析",
+    "top_id": 46
+  },
+  {
+    "id": 137,
+    "text": "资本运作",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->资本运作",
+    "top_id": 46
+  },
+  {
+    "id": 138,
+    "text": "同行比较",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->同行比较",
+    "top_id": 46
+  },
+  {
+    "id": 139,
+    "text": "研究报告",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->研究报告",
+    "top_id": 46
+  },
+  {
+    "id": 140,
+    "text": "核心题材",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->核心题材",
+    "top_id": 46
+  },
+  {
+    "id": 141,
+    "text": "盈利预测",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->盈利预测",
+    "top_id": 46
+  },
+  {
+    "id": 142,
+    "text": "分红融资",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->分红融资",
+    "top_id": 46
+  },
+  {
+    "id": 143,
+    "text": "公司高管",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->公司高管",
+    "top_id": 46
+  },
+  {
+    "id": 144,
+    "text": "关联个股",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->关联个股",
+    "top_id": 46
+  },
+  {
+    "id": 145,
+    "text": "概念题材",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->概念题材",
+    "top_id": 46
+  },
+  {
+    "id": 146,
+    "text": "公告解读",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->公告解读",
+    "top_id": 46
+  },
+  {
+    "id": 147,
+    "text": "股本结构",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->股本结构",
+    "top_id": 46
+  },
+  {
+    "id": 154,
+    "text": "投教基地",
+    "parent": 2,
+    "level": 3,
+    "full_name": "产品分类->智能金融业务->投教基地",
+    "top_id": 1
+  },
+  {
+    "id": 155,
+    "text": "知识百科",
+    "parent": 154,
+    "level": 4,
+    "full_name": "智能金融业务->投教基地->知识百科",
+    "top_id": 1
+  },
+  {
+    "id": 157,
+    "text": "基金档案库",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金档案库",
+    "top_id": 46
+  },
+  {
+    "id": 158,
+    "text": "基金基本资料",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金基本资料",
+    "top_id": 46
+  },
+  {
+    "id": 159,
+    "text": "持有人结构",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->持有人结构",
+    "top_id": 46
+  },
+  {
+    "id": 160,
+    "text": "基金规模",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金规模",
+    "top_id": 46
+  },
+  {
+    "id": 161,
+    "text": "基金分红",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金分红",
+    "top_id": 46
+  },
+  {
+    "id": 162,
+    "text": "基金业绩评价",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金业绩评价",
+    "top_id": 46
+  },
+  {
+    "id": 163,
+    "text": "发行与上市",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->发行与上市",
+    "top_id": 46
+  },
+  {
+    "id": 164,
+    "text": "董秘直通车",
+    "parent": 128,
+    "level": 4,
+    "full_name": "特色数据->独家数据->董秘直通车",
+    "top_id": 46
+  },
+  {
+    "id": 165,
+    "text": "新股通",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->新股通",
+    "top_id": 46
+  },
+  {
+    "id": 166,
+    "text": "业绩快报",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->业绩快报",
+    "top_id": 46
+  },
+  {
+    "id": 167,
+    "text": "沪港通",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->沪港通",
+    "top_id": 46
+  },
+  {
+    "id": 169,
+    "text": "投教云服务",
+    "parent": 154,
+    "level": 4,
+    "full_name": "智能金融业务->投教基地->投教云服务",
+    "top_id": 1
+  },
+  {
+    "id": 170,
+    "text": "金融词典",
+    "parent": 154,
+    "level": 4,
+    "full_name": "智能金融业务->投教基地->金融词典",
+    "top_id": 1
+  },
+  {
+    "id": 171,
+    "text": "沪深历史行情",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->沪深历史行情",
+    "top_id": 46
+  },
+  {
+    "id": 172,
+    "text": "财务附注",
+    "parent": 128,
+    "level": 4,
+    "full_name": "特色数据->独家数据->财务附注",
+    "top_id": 46
+  },
+  {
+    "id": 173,
+    "text": "沪港通深港通",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->沪港通深港通",
+    "top_id": 46
+  },
+  {
+    "id": 174,
+    "text": "热门概念",
+    "parent": 54,
+    "level": 4,
+    "full_name": "基础数据->股票投资->热门概念",
+    "top_id": 46
+  },
+  {
+    "id": 175,
+    "text": "产业链",
+    "parent": 119,
+    "level": 4,
+    "full_name": "特色数据->特色专题->产业链",
+    "top_id": 46
+  },
+  {
+    "id": 176,
+    "text": "基本资料",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基本资料",
+    "top_id": 46
+  },
+  {
+    "id": 177,
+    "text": "资产配置组合",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->资产配置组合",
+    "top_id": 46
+  },
+  {
+    "id": 178,
+    "text": "基金净值",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金净值",
+    "top_id": 46
+  },
+  {
+    "id": 179,
+    "text": "基金标签",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金标签",
+    "top_id": 46
+  },
+  {
+    "id": 180,
+    "text": "基金评价",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金评价",
+    "top_id": 46
+  },
+  {
+    "id": 181,
+    "text": "基金申购赎回",
+    "parent": 117,
+    "level": 4,
+    "full_name": "基础数据->基金投资->基金申购赎回",
+    "top_id": 46
+  },
+  {
+    "id": 182,
+    "text": "基金机会风险",
+    "parent": 128,
+    "level": 4,
+    "full_name": "特色数据->独家数据->基金机会风险",
+    "top_id": 46
+  },
+  {
+    "id": 183,
+    "text": "投资课堂",
+    "parent": 154,
+    "level": 4,
+    "full_name": "智能金融业务->投教基地->投资课堂",
+    "top_id": 1
+  },
+  {
+    "id": 184,
+    "text": "投教图说",
+    "parent": 154,
+    "level": 4,
+    "full_name": "智能金融业务->投教基地->投教图说",
+    "top_id": 1
+  },
+  {
+    "id": 185,
+    "text": "投教产品矩阵",
+    "parent": 154,
+    "level": 4,
+    "full_name": "智能金融业务->投教基地->投教产品矩阵",
+    "top_id": 1
+  },
+  {
+    "id": 186,
+    "text": "用户画像",
+    "parent": 15,
+    "level": 4,
+    "full_name": "智能金融业务->投顾服务->用户画像",
+    "top_id": 1
+  },
+  {
+    "id": 187,
+    "text": "选股策略",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->选股策略",
+    "top_id": 1
+  },
+  {
+    "id": 188,
+    "text": "择时策略",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->择时策略",
+    "top_id": 1
+  },
+  {
+    "id": 189,
+    "text": "金牌策略",
+    "parent": 11,
+    "level": 4,
+    "full_name": "智能金融业务->智能决策->金牌策略",
+    "top_id": 1
+  },
+  {
+    "id": 190,
+    "text": "智能盯盘",
+    "parent": 9,
+    "level": 4,
+    "full_name": "智能金融业务->行情分析->智能盯盘",
+    "top_id": 1
+  },
+  {
+    "id": 191,
+    "text": "外汇报价",
+    "parent": 123,
+    "level": 4,
+    "full_name": "行情数据->证券行情->外汇报价",
+    "top_id": 46
+  }
+]

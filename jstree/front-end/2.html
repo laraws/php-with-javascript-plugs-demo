@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jsTree test</title>
+    <!-- 2 load the theme CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css"/>
+</head>
+<style>
+    .panel {
+        display: inline-block;
+    }
+</style>
+
+<body>
+<div class="panel panel-primary" style="width: 30rem;">
+    <div class="panel-heading">using_json</div>
+    <div id="using_json" class="panel-body">
+    </div>
+    <div class="panel-footer">Panel footer</div>
+</div>
+
+<div class="panel panel-success" style="width: 30rem;">
+    <div class="panel-heading">using_json_2</div>
+    <div id="using_json_2" class="panel-body">
+    </div>
+    <div class="panel-footer">Panel footer</div>
+</div>
+
+<div class="panel panel-info" style="width: 30rem;">
+    <div class="panel-heading">using_ajax</div>
+    <div id="using_ajax" class="panel-body">
+    </div>
+    <div class="panel-footer">Panel footer</div>
+</div>
+
+<div class="panel panel-warning" style="width: 30rem;">
+    <div class="panel-heading">using_function</div>
+    <div id="using_function" class="panel-body">
+    </div>
+    <div class="panel-footer">Panel footer</div>
+</div>
+
+<div class="panel panel-warning" style="width: 30rem;">
+    <div class="panel-heading">using event</div>
+    <div id="using_events" class="panel-body">
+        <ul>
+            <li id="r1" class="jstree-open" data-jstree='{"selected":true}'>Root 1
+                <ul>
+                    <li id="n1">Child 1</li>
+                    <li id="n2">Child 2</li>
+                </ul>
+            </li>
+            <li id="r2" class="jstree-open">Root 2
+                <ul>
+                    <li id="n3">Child 3</li>
+                    <li id="n4">Child 4</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="panel-footer" id="event_result"></div>
+</div>
+
+
+<div class="panel panel-warning" style="width: 45rem;">
+    <div class="panel-heading">
+        <button class="btn btn-info" onclick="$('#using_interaction').jstree(true).select_node('mn1');">select 1</button>
+        <button class="btn btn-info" onclick="$('#using_interaction').jstree('select_node', 'mn2');">select 2</button>
+        <button class="btn btn-info" onclick="$.jstree.reference('#using_interaction').select_node('mn3');">select 3
+        </button>
+    </div>
+    <div id="using_interaction" class="panel-body">
+        <ul>
+            <li id="mn1">Node 1</li>
+            <li id="mn2">Node 2</li>
+            <li id="mn3">Node 3</li>
+        </ul>
+
+    </div>
+</div>
+
+<!-- 4 include the jQuery library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<!-- 5 include the minified jstree source -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+<script>
+    $(function () {
+        $('#using_json').jstree({
+            'core': {
+                'data': [
+                    'Simple root node',
+                    {
+                        'text': 'Root node 2',
+                        'state': {
+                            'opened': true,
+                            'selected': true
+                        },
+                        'children': [
+                            {'text': 'Child 1'},
+                            'Child 2'
+                        ]
+                    }
+                ]
+            }
+        });
+
+        $('#using_json_2').jstree({
+            'core': {
+                'data': [
+                    {"id": "ajson1", "parent": "#", "text": "Simple root node"},
+                    {"id": "ajson2", "parent": "#", "text": "Root node 2"},
+                    {"id": "ajson3", "parent": "ajson2", "text": "Child 1"},
+                    {"id": "ajson4", "parent": "ajson2", "text": "Child 2"},
+                ]
+            }
+        });
+
+
+        $('#using_ajax').jstree({
+            'core': {
+                'data': {
+                    'url': function (node) {
+                        return node.id === '#' ?
+                            'ajax_roots.json' :
+                            'ajax_children.json';
+                    },
+                    'data': function (node) {
+                        return {'id': node.id};
+                    }
+                }
+            }
+        })
+
+
+        $('#using_function').jstree({
+            'core': {
+                'data': function (obj, cb) {
+                    cb.call(this,
+                        ['Root 1', 'Root 2']);
+                }
+            }
+        })
+
+        $('#using_events').on('changed.jstree', function (e, data) {
+            var i, j, r = [];
+            for (i = 0, j = data.selected.length; i < j; i++) {
+                r.push(data.instance.get_node(data.selected[i]).text);
+            }
+            $('#event_result').html('Selected:<br /> ' + r.join(', '));
+        }).jstree();
+
+        $('#using_interaction').jstree();
+
+
+
+    })
+</script>
+</body>
+
+</html>

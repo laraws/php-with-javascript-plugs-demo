@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="myChart" style="width: 800px;height: 800px;"></div>
+<script>
+    var myChart=echarts.init(document.getElementById('myChart'));
+    option = {
+        title: {
+            text: '折线图堆叠'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross'
+            }
+        },
+        legend: {
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: []
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name:'',
+                type:'line',
+                stack: '总量',
+                data:[]
+            },
+            {
+                name:'',
+                type:'line',
+                stack: '总量',
+                data:[]
+            },
+            {
+                name:'',
+                type:'line',
+                stack: '总量',
+                data:[]
+            },
+        ]
+    };
+
+    $.ajax({
+        type: "post",
+        url: "php/stockdata.php",
+        dataType: "json",
+        success: function(data) {
+            myChart.setOption({
+                legend: {
+                    data:data.name
+                },
+                xAxis: {
+                    data: data.time
+                },
+                yAxis: {},
+                series: [
+                    {
+                    name: data.name[0],
+                    data: data.price0
+                },{
+                    name:data.name[1],
+                    data: data.price1
+                },{
+                    name:data.name[2],
+                    data: data.price2
+                }]
+            });
+        }
+
+
+    });
+
+    // $.get('json/1.json').done(function (data) {
+    //     myChart.setOption({
+    //         legend: {
+    //             data:data.name
+    //         },
+    //         xAxis: {
+    //             data: data.time
+    //         },
+    //         yAxis: {},
+    //         series: [{
+    //             name: data.name[0],
+    //             data: data.price0
+    //         },{
+    //             name:data.name[1],
+    //             data: data.price1
+    //         },{
+    //             name:data.name[2],
+    //             data: data.price2
+    //         }]
+    //     });
+    // });
+    myChart.setOption(option);
+
+</script>
+</body>
+</html>

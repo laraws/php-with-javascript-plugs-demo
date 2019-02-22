@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+ <div id="myChart" style="width: 800px;height: 800px;"></div>
+ <script>
+     option = {
+         title : {
+             text: '2015年GDP统计数据',
+             subtext: '数据来源网络（单位：万亿元）',
+             left: 'center' //标题居中
+         },
+         tooltip : { //提示工具，
+             trigger: 'item',
+             formatter: "{a} <br/>{b} : {c}万亿元"
+         },
+
+         visualMap: { //视觉映射组件，可以根据范围调节数据变化
+             min: 0, //最小值
+             max: 10, //最大值
+             left: 'left', //位置
+             top: 'bottom',
+             orient: 'horizontal', //水平
+             text:['高','低'],           // 文本，默认为数值文本
+             calculable : true  //是否启用值域漫游，即是否有拖拽用的手柄，以及用手柄调整选中范围。
+         },
+         toolbox: { //工具栏
+             show: true,
+             orient : 'vertical', //垂直
+             left: 'right',
+             top: 'center',
+             feature : {
+                 mark : {show: true},
+                 saveAsImage : {show: true} //保存为图片
+             }
+         },
+         series : [
+             {
+                 name: '2015年GDP',
+                 type: 'map',
+                 mapType: 'china', //使用中国地图
+                 roam: false, //是否开启鼠标缩放和平移
+                 itemStyle:{
+                     normal:{label:{show:true}},
+                     emphasis:{label:{show:true}}
+                 },
+                 data:[]
+             }
+         ]
+     };
+     var myChart = echarts.init(document.getElementById('myChart'));
+
+     myChart.showLoading(); //预加载动画
+     myChart.setOption(option); //渲染地图
+
+     $.ajax({
+         type: "post",
+         async: false, //同步执行
+         url: "php/mapdata.php",
+         dataType: "json", //返回数据形式为json
+         success: function(result) {
+             console.log(result);
+             myChart.hideLoading(); //隐藏加载动画
+             myChart.setOption({ //渲染数据
+                 series: [{
+                     // 根据名字对应到相应的系列
+                     name: '2015年GDP',
+                     data: result
+                 }]
+             });
+         },
+         error: function() {
+             alert("请求数据失败!");
+         }
+     });
+ </script>
+</body>
+</html>
